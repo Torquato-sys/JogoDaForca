@@ -74,6 +74,9 @@ def desenhar_forca(erros):
 
 def obter_palavra():
     palavra = input("Digite a palavra secreta: ").lower().strip()
+    if not palavra.isalpha():
+        print("Por favor, digite apenas letras.")
+        palavra = obter_palavra()
     limpar_tela()
     return palavra
 

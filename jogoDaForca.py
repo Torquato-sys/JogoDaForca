@@ -41,9 +41,9 @@ while True:
         if erros == 2:
             linha2 = "  |  "
         elif erros == 3:
-            linha2 = " \|  "
+            linha2 = " /|  "
         elif erros >= 4:
-            linha2 = " \|/ "
+            linha2 = " /|\ "
         print(f"X{linha2}")
         linha3 = ""
         if erros == 5:
